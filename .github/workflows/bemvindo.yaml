@@ -1,0 +1,11 @@
+name: Bem-vindo ao Github Actions meu caro.
+
+on: push
+
+jobs:
+  ola_amigo:
+    runs_on: ubuntu-latest
+    steps:
+      -name: comprimento
+      run: echo "💡 Ola meu caro, bem vindo ao github actions!."
+    
