@@ -6,6 +6,5 @@ jobs:
   ola-amigo:
     runs-on: ubuntu-latest
     steps:
-      -name: comprimento
-      run: echo "💡 Ola meu caro, bem vindo ao github actions!."
-    
+      - name: comprimento
+        run: echo "💡 Ola meu caro, bem vindo ao github actions!."
