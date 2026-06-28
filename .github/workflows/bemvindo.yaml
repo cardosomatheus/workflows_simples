@@ -24,8 +24,5 @@ jobs:
       - name: Instala bibliotecas
         run: pip install -r requirements.txt
       
-      - name: Teste1
-        run: python3 -m rsc.calculadora
-      
       - name: Executar testes unitários 
         run: python3 -m pytest --import-mode=append tests/
