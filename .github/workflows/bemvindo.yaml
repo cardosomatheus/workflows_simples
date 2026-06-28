@@ -1,6 +1,9 @@
 name: Bem-vindo ao Github Actions meu caro.
 
-on: push
+on: 
+  push:
+    branches:
+      - main
 
 jobs:
   ola-amigo:
@@ -8,3 +11,15 @@ jobs:
     steps:
       - name: comprimento
         run: echo "💡 Ola meu caro, bem vindo ao github actions!."
+      
+      - name : checkout do codigo
+        uses: actions/checkout@v4
+        with:
+          python-version: '3.12.3'
+          cache: 'pip'
+      
+      - name: Instala bibliotecas
+        run: pip install -r requirements.txt
+      
+      - name: Teste1
+        run: python3 -m rsc.calculadora
